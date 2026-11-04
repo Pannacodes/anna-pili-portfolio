@@ -1,15 +1,24 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { Routes, Route } from 'react-router'
+
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+
+import Home from './pages/Home'
+import About from './pages/About'
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-stone-100">
-      <h1 className="text-4xl font-bold text-stone-900">
-        Hello, I am Anna!
-      </h1>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+
+      <div className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+
+      <Footer />
     </div>
   )
 }
