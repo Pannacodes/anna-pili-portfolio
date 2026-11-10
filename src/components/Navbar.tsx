@@ -1,25 +1,29 @@
-
-import { NavLink } from 'react-router'
+import { Link } from "react-router";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-6">
-      <NavLink to="/" className="font-bold text-xl">
-        anna pili
-      </NavLink>
+    <header className="sticky top-0 z-50 w-full bg-page/65 backdrop-blur-sm">
+      <div className="mx-auto w-full max-w-6xl px-6">
+        <nav className="flex items-center justify-between px-4 py-6">
+          <Link
+            to="/"
+            className="font-sans text-lg font-medium text-ink"
+          >
+            anna pili
+          </Link>
 
-      <div className="flex gap-6">
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive ? 'font-bold' : 'text-gray-500'
-          }
-        >
-          about me
-        </NavLink>
+          <Link
+            to="/about"
+            className="font-sans text-sm text-ink"
+          >
+            about me
+          </Link>
+        </nav>
+
+        <div className="h-px w-full bg-line" />
       </div>
-    </nav>
-  )
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;
