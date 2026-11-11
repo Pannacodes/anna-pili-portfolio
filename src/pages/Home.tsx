@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
+import { Link } from "react-router";
 
 function Home() {
   return (
@@ -35,6 +36,16 @@ function Home() {
           </div>
         ))}
       </section>
+{/*       <section className="mx-auto w-full max-w-6xl px-6">
+        <div className="flex justify-end py-8">
+          <Link
+            to="/projects/portfolio"
+            className="text-sm text-link transition-colors hover:text-ink"
+          >
+            about this portfolio ↗
+          </Link>
+        </div>
+      </section> */}
     </main>
   );
 }

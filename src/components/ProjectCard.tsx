@@ -1,4 +1,5 @@
 import type { Project } from "../types/project";
+import { Link } from "react-router";
 
 interface ProjectCardProps {
   project: Project;
@@ -12,18 +13,20 @@ function ProjectCard({ project, isReversed }: ProjectCardProps) {
         isReversed ? "md:flex-row-reverse" : ""
       }`}
     >
-      {/* Project image */}
-      <div className="w-full md:w-1/2">
+      <Link to={`/projects/${project.id}`} className="w-full md:w-1/2">
         <img
           src={project.image}
-          alt={project.title}
+          alt={`${project.title} project`}
           className="h-auto w-full object-contain"
         />
-      </div>
+      </Link>
 
-      {/* Project information */}
       <div className="flex w-full flex-col justify-center gap-4 py-6 md:w-1/2 md:px-12 md:py-0">
-        <h2 className="text-5xl font-medium text-ink">{project.title}</h2>
+        <Link to={`/projects/${project.id}`} className="w-fit">
+          <h2 className="text-5xl font-medium text-ink hover:text-link">
+            {project.title}
+          </h2>
+        </Link>
 
         <p className="text-sm leading-relaxed text-muted">
           {project.description}
@@ -36,6 +39,13 @@ function ProjectCard({ project, isReversed }: ProjectCardProps) {
             </span>
           ))}
         </div>
+
+        <Link
+          to={`/projects/${project.id}`}
+          className="w-fit text-sm text-link"
+        >
+          View project →
+        </Link>
       </div>
     </article>
   );
