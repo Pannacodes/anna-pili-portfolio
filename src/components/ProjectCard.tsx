@@ -17,13 +17,13 @@ function ProjectCard({ project, isReversed }: ProjectCardProps) {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-auto object-contain"
+          className="h-auto w-full object-contain"
         />
       </div>
 
       {/* Project information */}
       <div className="flex w-full flex-col justify-center gap-4 py-6 md:w-1/2 md:px-12 md:py-0">
-        <h2 className="text-2xl font-medium text-ink">{project.title}</h2>
+        <h2 className="text-5xl font-medium text-ink">{project.title}</h2>
 
         <p className="text-sm leading-relaxed text-muted">
           {project.description}

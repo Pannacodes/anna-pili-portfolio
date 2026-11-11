@@ -7,7 +7,7 @@ function Home() {
       <section className="mx-auto flex w-full max-w-6xl flex-col gap-20 px-6 py-20 md:gap-28 md:py-24">
         {/* Name */}
         <div className="md:pl-25">
-          <h1 className="text-9xl font-semibold tracking-tight text-ink ">
+          <h1 className="text-9xl font-semibold tracking-tight text-ink md:text-9xl">
             anna pili
           </h1>
           <p className="ml-2 mt-3 text-base font-medium tracking-wide text-link sm:text-lg">
