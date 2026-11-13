@@ -11,7 +11,7 @@ function Home() {
             anna pili
           </h1>
           <p className="ml-2 mt-3 text-base font-medium tracking-wide text-link sm:text-lg">
-            Full-Stack Web Developer
+            Full-Stack Developer
           </p>
         </div>
 

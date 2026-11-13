@@ -9,6 +9,7 @@ import PlacePulse from "./pages/projects/PlacePulse";
 import DolphinDash from "./pages/projects/DolphinDash";
 import TreasureHunt from "./pages/projects/TreasureHunt";
 import PersonalWebsite from "./pages/projects/PersonalWebsite";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             path="/projects/personal-website"
             element={<PersonalWebsite />}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 

@@ -26,6 +26,14 @@ function ProjectDetails({ projectId }: ProjectDetailsProps) {
           {project.title}
         </h1>
 
+        <div
+          role="status"
+          className="mt-6 border border-line p-4 text-sm text-muted"
+        >
+          <p className="font-medium text-ink">Work in progress</p>
+          <p>This page is still being built. Check back soon!</p>
+        </div>
+
         <div className="mt-8 flex flex-wrap gap-3">
           {project.technologies.map((technology) => (
             <span key={technology} className="text-sm text-muted">
