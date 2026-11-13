@@ -78,7 +78,7 @@ function About() {
 
                     {/* PDF preview */}
                     <iframe
-                      src="/documents/AnnaPili-CV.pdf"
+                      src="/documents/anna-pili-cv.pdf"
                       title="Anna Pili CV preview"
                       className="min-h-0 w-full flex-1"
                     />
