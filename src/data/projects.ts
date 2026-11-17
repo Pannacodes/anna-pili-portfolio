@@ -45,6 +45,6 @@ export const projects: Project[] = [
     description:
       "A creative personal website designed and developed from scratch, exploring visual storytelling, custom CSS styling and responsive layouts. Focused on creating an engaging browsing experience through thoughtful design and accessible navigation.",
     technologies: ["HTML", "CSS"],
-    image: "/images/personal-website.png",
+    image: "/images/personalweb-window-bg.png",
   },
 ];

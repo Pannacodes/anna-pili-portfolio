@@ -51,7 +51,7 @@ function About() {
               </div>
               {/* CV preview */}
               {isCvOpen && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/70 p-4">
+                <div className="fixed inset-0 z-100 flex items-center justify-center bg-ink/70 p-4">
                   <div className="flex h-[90vh] w-full max-w-4xl flex-col bg-page">
                     {/* Modal header */}
                     <div className="flex items-center justify-between border-b border-line p-4">
