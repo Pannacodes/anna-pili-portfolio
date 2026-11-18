@@ -1,6 +1,7 @@
 export interface ProjectDetailSection {
   heading: string;
   description: string;
+  image?: string;
 }
 
 export interface ProjectDetail {
@@ -19,17 +20,25 @@ export const projectDetails: ProjectDetail[] = [
     image: "/images/mycircle-iphone-bg.png",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
     overview:
-      "MyCircle is a full-stack application for private groups who want one shared place to organise everyday life. It brings household tasks and group activities together in a collaborative space.",
+      "MyCircle is a full-stack application designed to bring everyday organisation into one shared space. It allows households, couples and groups of friends to coordinate tasks and activities within private, collaborative groups.",
     sections: [
       {
-        heading: "Private groups",
+        heading: "Context",
         description:
-          "The application is centred around groups, giving households, couples, and friends a shared space for coordinating their day-to-day activities.",
+          "Keeping track of shared responsibilities can become difficult when information is scattered across different conversations and apps. MyCircle was created to offer a central space where people can organise everyday life together, with everyone able to participate.",
+        image: "",
       },
       {
-        heading: "Collaboration and access",
+        heading: "Shaping the product",
         description:
-          "User authentication and group management support a private, collaborative experience where members can organise shared tasks and activities.",
+          "The focus was on building an approachable experience centred around private groups, user authentication and shared organisation. I developed the application using the MERN stack, connecting the React frontend to an Express and Node.js backend with MongoDB for data management.",
+          image: "",
+      },
+      {
+        heading: "Outcome",
+        description:
+          "The result is a full-stack application that brings private group organisation into one place. Building MyCircle gave me experience working across the full development process, from database structure and API development to the user interface and collaborative functionality.",
+          image: "",
       },
     ],
   },
@@ -45,17 +54,25 @@ export const projectDetails: ProjectDetail[] = [
       "Open-Meteo API",
     ],
     overview:
-      "PlacePulse lets people explore and contribute locations, pairing community-provided place information with environmental data from the Open-Meteo Air Quality API.",
+      "Environmental conditions, connected to people. PlacePulse is an interactive platform where users can explore and contribute locations, combining community-shared places with environmental information.",
     sections: [
       {
-        heading: "Explore and contribute",
+        heading: "Context",
         description:
-          "Users can browse locations and contribute new information, making the application a shared resource for discovering places.",
+          "Places are connected to the people who live there, have travelled there or simply feel attached to them. PlacePulse explores this connection by bringing together user-contributed locations and environmental information, offering a different way to discover places around the world.",
+          image: "",
       },
       {
-        heading: "Location data and air quality",
+        heading: "Shaping the product",
         description:
-          "CRUD functionality supports managing location information, while an API integration brings air-quality data into the experience.",
+          "I focused on creating an interactive experience where users could explore, add, edit and manage locations. The application integrates the Open-Meteo Air Quality API to bring environmental data into the experience. React Router and Axios support navigation and communication with the data source.",
+          image: "",
+      },
+      {
+        heading: "Outcome",
+        description:
+          "The result is a location-sharing application combining CRUD functionality with external environmental data. This project helped me develop my understanding of API integration, application state and building multi-page experiences with React.",
+          image: "",
       },
     ],
   },
@@ -65,17 +82,25 @@ export const projectDetails: ProjectDetail[] = [
     image: "/images/dolphindash-window-bg.png",
     technologies: ["HTML", "CSS", "JavaScript"],
     overview:
-      "Dolphin Dash is a browser-based game about navigating a dolphin through an ocean affected by marine pollution. Players collect fish while avoiding pollution.",
+      "Dolphin Dash is a browser-based game with an environmental message. Players guide a dolphin through an ocean affected by marine pollution, collecting fish while avoiding hazards.",
     sections: [
       {
-        heading: "Game mechanics",
+        heading: "Context",
         description:
-          "The game combines player movement, collectible fish, hazards, collision detection, and scoring to create its core play loop.",
+          "The project explores how a simple interactive game can communicate an environmental theme. Through familiar game mechanics, players navigate an ocean environment while encountering the pollution that threatens marine life.",
+          image: "",
       },
       {
-        heading: "An interactive experience",
+        heading: "Shaping the product",
         description:
-          "Animations and sound effects add feedback to gameplay and support the game's marine-pollution theme.",
+          "I developed the game using JavaScript, building the movement mechanics, collectible items, collision detection and scoring system. CSS animations and sound effects add feedback to the gameplay and make the experience more engaging.",
+          image: "",
+      },
+      {
+        heading: "Outcome",
+        description:
+          "The result is a playable browser game combining interactive mechanics with an environmental theme. Developing Dolphin Dash strengthened my JavaScript fundamentals and gave me the opportunity to explore game logic, animation and user interaction.",
+          image: "",
       },
     ],
   },
@@ -85,17 +110,25 @@ export const projectDetails: ProjectDetail[] = [
     image: "/images/treasurehunt-iphone-bg.png",
     technologies: ["React.js", "JavaScript", "CSS"],
     overview:
-      "Treasure Hunt is a personalised interactive web experience built around a sequence of story-led clues and challenges.",
+      "Treasure Hunt is a personalised interactive web experience built around a sequence of story-led clues and challenges, inviting users to take part in a digital treasure hunt.",
     sections: [
       {
-        heading: "Story and clues",
+        heading: "Context",
         description:
-          "Storytelling and clues guide the experience, giving the user a narrative to follow as they progress through the hunt.",
+          "The idea was to create a more personal digital experience, using storytelling and interactive clues to guide someone through a sequence of challenges. Rather than simply presenting information, the experience encourages users to actively take part.",
+          image: "",
       },
       {
-        heading: "Interactive challenges",
+        heading: "Shaping the product",
         description:
-          "Interactive challenges make the experience participatory and bring the personalised treasure hunt to life in the browser.",
+          "I used React, JavaScript and CSS to bring the experience to life, combining story-led content with interactive challenges. The structure guides users through the different stages of the hunt, connecting each clue to the next part of the experience.",
+          image: "",
+      },
+      {
+        heading: "Outcome",
+        description:
+          "The result is a personalised browser-based experience that combines storytelling and interaction. This project gave me an opportunity to explore how frontend development can be used to create something engaging beyond a traditional website.",
+          image: "",
       },
     ],
   },
@@ -105,17 +138,22 @@ export const projectDetails: ProjectDetail[] = [
     image: "/images/personal-website.png",
     technologies: ["HTML", "CSS"],
     overview:
-      "This personal website explores how visual design and clear navigation can work together to create an engaging online presence.",
+      "A personal website created to explore visual design and frontend development, bringing together a distinctive visual identity and a clear, accessible browsing experience.",
     sections: [
       {
-        heading: "Visual presentation",
+        heading: "Context",
         description:
-          "Custom CSS and visual storytelling shape the site's look and feel, with a focus on creative presentation.",
+          "I wanted to create a personal online space that reflected my interests and provided a way to present information through visual storytelling. The focus was on combining a distinctive design with a straightforward browsing experience.",
       },
       {
-        heading: "Responsive and accessible",
+        heading: "Shaping the product",
         description:
-          "The layout is designed to adapt across screen sizes, with accessible navigation helping visitors move through the site.",
+          "I explored the visual direction, layout and typography before implementing the website using HTML and CSS. Particular attention went into the visual presentation, page structure and responsive layout.",
+      },
+      {
+        heading: "Outcome",
+        description:
+          "The result is a personal website that brings together visual design and frontend development. It gave me an opportunity to experiment with layout, styling and responsive design while developing my foundations in web development.",
       },
     ],
   },

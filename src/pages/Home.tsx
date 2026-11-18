@@ -11,14 +11,14 @@ function Home() {
             anna pili
           </h1>
           <p className="ml-2 mt-3 text-base font-medium tracking-wide text-link sm:text-lg">
-            Full-Stack Developer
+            Full-Stack Web Developer
           </p>
         </div>
 
         {/* Introduction */}
         <div className="flex justify-end md:pr-25">
           <p className="max-w-md text-xl leading-relaxed text-muted">
-            I'm a software developer passionate about creating thoughtful,
+            Based in Barcelona, I am passionate about creating thoughtful,
             accessible and user-friendly digital experiences.
           </p>
         </div>
@@ -35,16 +35,6 @@ function Home() {
           </div>
         ))}
       </section>
-{/*       <section className="mx-auto w-full max-w-6xl px-6">
-        <div className="flex justify-end py-8">
-          <Link
-            to="/projects/portfolio"
-            className="text-sm text-link transition-colors hover:text-ink"
-          >
-            about this portfolio ↗
-          </Link>
-        </div>
-      </section> */}
     </main>
   );
 }

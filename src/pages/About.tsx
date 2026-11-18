@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Skills from "../components/Skills";
 
 function About() {
   const [isCvOpen, setIsCvOpen] = useState(false);
@@ -105,6 +106,7 @@ function About() {
         <h2 className="text-4xl font-semibold tracking-tight text-ink md:text-5xl">
           skills
         </h2>
+        <Skills />
       </section>
     </main>
   );
