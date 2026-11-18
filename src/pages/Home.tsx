@@ -6,7 +6,7 @@ function Home() {
     <main className="w-full py-12">
       <section className="mx-auto flex w-full max-w-6xl flex-col gap-20 px-6 py-20 md:gap-28 md:py-24">
         {/* Name */}
-        <div className="md:pl-25">
+        <div className="md:pl-20">
           <h1 className="text-9xl font-semibold tracking-tight text-ink md:text-9xl">
             anna pili
           </h1>
@@ -16,10 +16,12 @@ function Home() {
         </div>
 
         {/* Introduction */}
-        <div className="flex justify-end md:pr-25">
-          <p className="max-w-md text-xl leading-relaxed text-muted">
-            Based in Barcelona, I am passionate about creating thoughtful,
-            accessible and user-friendly digital experiences.
+        <div className="flex justify-end md:pr-20">
+          <p className="max-w-lg text-xl leading-relaxed text-muted text-justify">
+            Based in Barcelona, I’m driven by curiosity and a love of learning
+            how things work. From exploring an idea to bringing it to life
+            through code, I enjoy creating digital experiences that are useful,
+            intuitive and meaningful.
           </p>
         </div>
         <div className="h-px w-full bg-line"></div>

@@ -29,15 +29,17 @@ function About() {
             {/* Introduction text */}
             <div className="flex flex-col gap-6 mt-20 text-xl leading-relaxed text-muted text-justify">
               <p>
-                Hi! I'm a software developer with an interest in building
-                thoughtful, user-friendly digital experiences.
+                Hi! I'm naturally curious and enjoy understanding how things
+                work, exploring new ideas and finding ways to bring them to
+                life.
               </p>
 
               <p>
-                I enjoy bringing ideas to life through code, combining technical
-                problem-solving with an eye for design and usability. I'm
-                particularly interested in full-stack development and creating
-                applications that make everyday experiences a little better.
+                I found in software development a way to combine my interest in
+                problem-solving with my creative side. I enjoy the process of
+                turning an idea into something tangible, paying attention to
+                both how it works and how it feels to use. I'm always keen to
+                learn, experiment and find better ways to build things.
               </p>
 
               {/* CV button */}
