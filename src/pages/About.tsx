@@ -18,8 +18,8 @@ function About() {
           {/* Personal image */}
           <div>
             <img
-              src="/images/anna-about-me.png"
-              alt="Illustration of Anna"
+              src="/images/anna.JPG"
+              alt="Anna"
               className="h-auto w-full object-cover"
             />
           </div>
@@ -41,6 +41,36 @@ function About() {
                 both how it works and how it feels to use. I'm always keen to
                 learn, experiment and find better ways to build things.
               </p>
+
+              {/* Contact information */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-muted">
+                <span>Barcelona, Spain</span>
+
+                <a
+                  href="https://www.linkedin.com/in/YOUR-PROFILE/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-link"
+                >
+                  LinkedIn ↗
+                </a>
+
+                <a
+                  href="https://github.com/YOUR-USERNAME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-link"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  href="mailto:YOUR-EMAIL"
+                  className="transition-colors hover:text-link"
+                >
+                  Email ↗
+                </a>
+              </div>
 
               {/* CV button */}
               <div>
