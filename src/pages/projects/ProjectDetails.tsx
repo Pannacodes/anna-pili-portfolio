@@ -1,12 +1,9 @@
-import { Link, Navigate } from "react-router";
-import { projectDetails } from "../../data/projectDetails";
+import { Link, Navigate, useParams } from "react-router";
+import { projects } from "../../data/projects";
 
-interface ProjectDetailsProps {
-  projectId: string;
-}
-
-function ProjectDetails({ projectId }: ProjectDetailsProps) {
-  const project = projectDetails.find(({ id }) => id === projectId);
+function ProjectDetails() {
+  const { projectId } = useParams();
+  const project = projects.find(({ id }) => id === projectId);
 
   if (!project) {
     return <Navigate to="/" replace />;
