@@ -127,7 +127,7 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
+  /*   {
     id: "personal-website",
     title: "Personal Website",
     description:
@@ -153,5 +153,5 @@ export const projects: Project[] = [
           "The result is a personal website that brings together visual design and frontend development. It gave me an opportunity to experiment with layout, styling and responsive design while developing my foundations in web development.",
       },
     ],
-  },
+  }, */
 ];
